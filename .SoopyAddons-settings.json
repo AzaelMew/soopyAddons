@@ -1,0 +1,461 @@
+[
+  {
+    "name": "Info",
+    "settings": [
+      {
+        "type": "button",
+        "name": "&6Soopy&7Addons",
+        "text": "&7Version v0.1.74",
+        "method": "/Function(\n() => {\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Reset Settings",
+        "text": "click",
+        "method": "/Function(\n() => {\n    ChatLib.simulateChat(\"&cReset settings. &7(For SoopyAddons Chattriggers Module)\");\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Command Help",
+        "text": "click",
+        "method": "/Function(\n() => {\n    ChatLib.chat(\"&6Soopy&7Addons &7Command help\");\n    ChatLib.chat(\" &r- /soopy player [ign] &7: Will show that player's skyblock stats in chat\");\n    ChatLib.chat(\" &r- /soopy guild [guild name] &7: Will show that guilds's stats lb for skill/slayer\");\n    ChatLib.chat(\" &r- /newhub &7: Will warp to your private island and back to hub in skyblock\");\n    ChatLib.chat(\" &r- /dung &7: Will warp to the dungeon hub\");\n    ChatLib.chat(\" &r- /ldung &7: Will warp to the lobby then skyblock then dungeon hub\");\n    ChatLib.chat(\" &r- /reparty &7: Will disband the party and then re-invite all of the members\");\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Discord server",
+        "text": "click",
+        "method": "/Function(\n() => {\n    ChatLib.chat(\"&6Soopy&7Addons &7Discord server\");\n    ChatLib.chat(new TextComponent(\" &r- https://discord.gg/WShxTFY\").setClick(\"open_url\", \"https://discord.gg/WShxTFY\"));\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Credits",
+        "text": "click",
+        "method": "/Function(\n() => {\n    ChatLib.chat(\"&6Soopy&7Addons &7Credits\");\n    ChatLib.chat(\" &r- &6Phxntomexile &7: Beta tester and Lots of ideas\");\n    ChatLib.chat(\" &r- &6Agentlai &7: Beta tester\");\n    ChatLib.chat(\" &r- &6vNoxus &7: Ideas and bug testing\");\n}\n)/",
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "Improvements",
+    "settings": [
+      {
+        "type": "toggle",
+        "name": "Better line break",
+        "value": true,
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "Spam hider",
+    "settings": [
+      {
+        "type": "toggle",
+        "name": "Enable spam hider",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Block some useless messages",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Move some messages from main chat and to the right side of the screen",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Just block the messages from showing instead of moving them",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Location of where the messages get moved to:",
+        "text": "&cClick to send a test message",
+        "method": "/Function(\n() => {\n    ChatLib.simulateChat(\"&cThis is a test message. &7(For SoopyAddons Chattriggers Module)\");\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "string_selector",
+        "name": "What corner of the screen?",
+        "value": 2,
+        "options": [
+          "Top left",
+          "Top Right",
+          "Bottom Right"
+        ],
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "ADVANCED: x Offset",
+        "value": 0,
+        "min": -500,
+        "max": 500,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "ADVANCED: y Offset",
+        "value": 0,
+        "min": -500,
+        "max": 500,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "Change messages that are moved / hidden",
+        "text": "click",
+        "method": "/Function(\n() => {\n    ChatLib.simulateChat(\"&cOPENING MESSAGE EDITS\");\n}\n)/",
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "Performance",
+    "settings": [
+      {
+        "type": "button",
+        "name": "",
+        "text": "It is recomended to leave these values at default settings",
+        "method": "/Function(\n() => {\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Enable RenderEntity event",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Disable armour stands render",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Disable EVERYTHING render",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Enable armourstand render distance",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Armourstand render distance",
+        "value": 30,
+        "min": 1,
+        "max": 100,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Player render distance (Only if there is more than 25 players online)",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Hide close entity's during splash",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Auto ct load suggestion message",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Auto ct load",
+        "value": true,
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeons",
+    "settings": [
+      {
+        "type": "button",
+        "name": "",
+        "text": "This is the auto dungeons party finder kicker thing",
+        "method": "/Function(\n() => {\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "",
+        "text": "&7(it kicks people who join using party finder and dont meet reqs)",
+        "method": "/Function(\n() => {\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Minimum player class level to join",
+        "value": 0,
+        "min": 0,
+        "max": 50,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Allow Healers to join the party",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Allow Mages to join the party",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Allow Tanks to join the party",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Allow Beserkers to join the party",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Allow Archers to join the party",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "button",
+        "name": "",
+        "text": "Other dungeon settings",
+        "method": "/Function(\n() => {\n}\n)/",
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Watcher finished spawning mobs alert",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Dungeons 1m in alert",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Dungeons 80% in alert",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show spirit bear / correct livid HP",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Spirit Bear HP X",
+        "value": 10,
+        "min": 0,
+        "max": 960,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Spirit Bear HP Y",
+        "value": 40,
+        "min": 0,
+        "max": 600,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show total midas staff dmg",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Midas staff dmg X",
+        "value": 10,
+        "min": 0,
+        "max": 960,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Midas staff dmg Y",
+        "value": 40,
+        "min": 0,
+        "max": 600,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show box around Spirit Bear and Spirit Bow and Correct Livid",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show no armour message when entering a dungeon",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Put a box around bats",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Put a red box around skeleton masters",
+        "value": true,
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "HUD",
+    "settings": [
+      {
+        "type": "toggle",
+        "name": "Show FPS and CPS",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show 'BOSS SLAIN' Message when you have a empty slayer quest",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show 'BOSS SPAWNED' Message when you have spawned a slayer",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show current pet",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Current pet more info",
+        "value": false,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Pet Display X",
+        "value": 10,
+        "min": 0,
+        "max": 960,
+        "round": 0,
+        "hidden": false
+      },
+      {
+        "type": "slider",
+        "name": "Pet Display Y",
+        "value": 30,
+        "min": 0,
+        "max": 600,
+        "round": 0,
+        "hidden": false
+      }
+    ]
+  },
+  {
+    "name": "Other",
+    "settings": [
+      {
+        "type": "toggle",
+        "name": "Show SBG reminders as title",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Auto ty for SBG reminders",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Better guild messages",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Auto guild 'Welcome' for new members",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show splash leach messages",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Show player's 'skill' next to their name in skyblock.",
+        "value": true,
+        "hidden": false
+      },
+      {
+        "type": "string_selector",
+        "name": "What stat to use as 'skill'",
+        "value": 0,
+        "options": [
+          "Skill Average",
+          "Catacombs",
+          "Total Slayer",
+          "Soopy Skill"
+        ],
+        "hidden": false
+      },
+      {
+        "type": "toggle",
+        "name": "Old Ability Messages",
+        "value": true,
+        "hidden": false
+      }
+    ]
+  }
+]
