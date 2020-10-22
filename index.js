@@ -1514,21 +1514,6 @@ let tickEvent = register("tick", () => {
 
 })
 
-let tickEventEnabled = true
-
-register("command", () => {
-
-	if (tickEventEnabled) {
-		tickEvent.unregister()
-		tickEventEnabled = !tickEventEnabled
-	} else {
-		tickEvent.register()
-		tickEventEnabled = !tickEventEnabled
-	}
-}).setName("toggletickevent")
-
-
-
 //Performance
 
 
